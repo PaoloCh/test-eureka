@@ -17,7 +17,7 @@ spring:
   # ===============================
   datasource:
   #  url: jdbc:h2:mem:productDB;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
-    url: jdbc:mysql://root:YxqnDcmtxMrpYVuPNojRkVKrfBkftAMT@mysql.railway.internal:3306/railway
+    url: jdbc:mysql://root:YxqnDcmtxMrpYVuPNojRkVKrfBkftAMT@viaduct.proxy.rlwy.net:15921/railway
   #  driverClassName: org.h2.Driver
   #  platform: h2
     username: root
