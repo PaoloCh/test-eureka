@@ -9,18 +9,19 @@ server:
 # http://localhost:8091/h2-console
 # Enabling H2 Console
 spring:
-  h2:
-    console:
-      enabled: true
+#  h2:
+#    console:
+#      enabled: true
   # ===============================
   # DB
   # ===============================
   datasource:
-    url: jdbc:h2:mem:productDB;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
-    driverClassName: org.h2.Driver
-    platform: h2
-    username: sa
-    password:
+  #  url: jdbc:h2:mem:productDB;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    url: mysql://root:YxqnDcmtxMrpYVuPNojRkVKrfBkftAMT@mysql.railway.internal:3306/railway
+  #  driverClassName: org.h2.Driver
+  #  platform: h2
+    username: root
+    password: YxqnDcmtxMrpYVuPNojRkVKrfBkftAMT
 
   # ===============================
   # JPA / HIBERNATE
@@ -29,7 +30,7 @@ spring:
     show-sql: true
     hibernate:
       ddl-auto: update
-    database-platform: org.hibernate.dialect.H2Dialect
+  #  database-platform: org.hibernate.dialect.H2Dialect
     properties:
       hibernate:
         show_sql: true
