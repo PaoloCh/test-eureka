@@ -16,4 +16,8 @@ spring:
         - id: courses-service
           uri: lb://courses-service
           predicates:
-            - Path=/courses/**
+            - Path=/grow-easy/courses/**
+        -id: community-service
+          uri: lb://community-service
+          predicates:
+            - Path=/grow-easy/posts/**
