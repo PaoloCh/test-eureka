@@ -22,8 +22,16 @@ spring:
         - id: courses-service
           uri: lb://courses-service
           predicates:
-            - Path=/courses/**
+            - Path=/api/v1/courses/**
         - id: community-service
           uri: lb://community-service
           predicates:
-            - Path=/posts/**
+            - Path=/api/v1/posts/**
+        - id: articles-service
+          uri: lb://articles-service
+          predicates:
+            - Path=/api/v1/articles/**
+        - id: user-service
+          uri: lb://user-service
+          predicates:
+            - Path=/api/v1/users/**
